@@ -5,4 +5,11 @@
     /* width: 15%; */
     margin-bottom: 30px;
     padding: 25px;
+    width: 15%
+}
+
+.officersList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
