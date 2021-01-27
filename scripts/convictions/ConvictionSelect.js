@@ -27,12 +27,12 @@ export const ConvictionSelect = () => {
     getConvictions()
     .then( () => {
       // Get all convictions from application state
-      const convictions = useConvictions()
-      render(convictions)
+    const convictions = useConvictions()
+    render(convictions)
     })
 }
 
-const render = convictionsCollection => {
+const render = (convictionsCollection) => {
     /*
         Use interpolation here to invoke the map() method on
         the convictionsCollection to generate the option elements.
