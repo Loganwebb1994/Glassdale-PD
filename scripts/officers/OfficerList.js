@@ -6,12 +6,12 @@ const officersContainer = document.querySelector(".officersContainer")
 export const OfficerList = () => {
     getOfficers()
         .then(() => {
-            const officerArray = useOfficers()
-            console.log(officerArray)
+            const officers = useOfficers()
+            console.log(officers)
             // debugger
             let officersHTMLRepresentation = ""
-            for (const officer of officerArray) {
-                officersHTMLRepresentation += Officer(officer)
+            for (const officerObj of officers) {
+                officersHTMLRepresentation += Officer(officerObj)
             }
             officersContainer.innerHTML = `
             <h3>Glassdale Officers</h3>
@@ -21,4 +21,3 @@ export const OfficerList = () => {
             `
         })
 }
-//I fucked it all up
