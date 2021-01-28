@@ -1,0 +1,9 @@
+.caseNotesForm{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+#saveNote{
+    width: 10%
+}
