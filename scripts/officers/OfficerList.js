@@ -7,7 +7,6 @@ export const OfficerList = () => {
     getOfficers()
         .then(() => {
             const officers = useOfficers()
-            console.log(officers)
             // debugger
             let officersHTMLRepresentation = ""
             for (const officerObj of officers) {
