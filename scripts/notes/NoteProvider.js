@@ -23,6 +23,14 @@ export const saveNote = note => {
         },
         body: JSON.stringify(note)
     })
-    .then(getNotes)
-    .then(dispatchStateChangeEvent)
+    // .then(getNotes)
+    // .then(dispatchStateChangeEvent)
 }
+
+
+
+// Handle browser-generated click event in component
+
+
+
+

@@ -1,7 +1,8 @@
-const contentTarget = document.querySelector(".noteListButton")
+
 const eventHub = document.querySelector(".container")
 
 eventHub.addEventListener("click", clickEvent => {
+    console.log("button clicked")
     if (clickEvent.target.id === "showNotes") {
         const customEvent = new CustomEvent("showNotesClicked")
         eventHub.dispatchEvent(customEvent)
@@ -9,5 +10,5 @@ eventHub.addEventListener("click", clickEvent => {
 })
 
 export const ShowNoteButton = () => {
-    contentTarget.innerHTML = "<button id='showNotes'>Show Notes</button>"
+    return "<button id='showNotes'>Show Notes</button>"
 }
