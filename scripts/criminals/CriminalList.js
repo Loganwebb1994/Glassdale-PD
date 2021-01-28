@@ -55,8 +55,9 @@ eventHub.addEventListener("crimeChosen", crimeChosenEvent => {
 
 eventHub.addEventListener("officerChosen", customEvent => {
     const officer = customEvent.detail.selectedOfficerName
+    console.log(officer)
     //now get criminals
-    const criminals = useCriminals
+    const criminals = useCriminals()
     //now filter criminals
     const filteredCriminalsArray = criminals.filter(
         criminalObject => {
