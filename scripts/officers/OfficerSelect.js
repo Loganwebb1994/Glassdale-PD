@@ -27,7 +27,7 @@ const render = (officersCollection) => {
     contentTarget.innerHTML = `
         <select class="dropdown" id="officerSelect">
             <option value="0">Please select an officer...</option>
-            ${officersCollection.map(officersObject =>`<option value="${officersObject.id}">${officersObject.name}</option>`).join("")
+            ${officersCollection.map(officersObject =>`<option value="${officersObject.name}">${officersObject.name}</option>`).join("")
             }
         </select>
     `
