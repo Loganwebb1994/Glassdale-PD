@@ -3,20 +3,20 @@ import {getOfficers, useOfficers} from "./OfficerProvider.js"
 const eventHub = document.querySelector(".container")
 const contentTarget = document.querySelector(".filters__officer")
 
-eventHub.addEventListener("change", changeEvent => {
-    if (changeEvent.target.id === "officerSelect"){
-        const selectedOfficer = changeEvent.target.value
+// eventHub.addEventListener("change", changeEvent => {
+//     if (changeEvent.target.id === "officerSelect"){
+//         const selectedOfficer = changeEvent.target.value
         
-        const customEvent = new CustomEvent("officerChosen", {
-            detail: {
-                selectedOfficerName: selectedOfficer
-            }
+//         const customEvent = new CustomEvent("officerChosen", {
+//             detail: {
+//                 selectedOfficerName: selectedOfficer
+//             }
 
-        })
+//         })
 
-        eventHub.dispatchEvent(customEvent)
-    }
-})
+//         eventHub.dispatchEvent(customEvent)
+//     }
+// })
 
 const render = (officersCollection) => {
     /*
@@ -25,7 +25,7 @@ const render = (officersCollection) => {
         Look back at the example provided above.
     */
     contentTarget.innerHTML = `
-        <select class="dropdown" id="officerSelect">
+        <select class="dropdown" id="crimeSelect">
             <option value="0">Please select an officer...</option>
             ${officersCollection.map(officersObject =>`<option value="${officersObject.id}">${officersObject.name}</option>`).join("")
             }
