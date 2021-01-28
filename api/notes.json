@@ -1,3 +1,10 @@
 {
-    "notes": []
+  "notes": [
+    {
+      "date": "2021-01-01",
+      "suspect": "Bryan",
+      "text": "Bryan is always guilty",
+      "id": 1
+    }
+  ]
 }
