@@ -9,8 +9,8 @@ const renderNote = () => {
             <label for="suspectNoteLabel">Suspect</label>
             <input class="noteSuspectEntry" type="text" name="noteSuspectEntry" id="noteSuspectEntry>
             <label for="caseNoteLabel">Notes</label>
-            <textarea class="caseNote" name="caseNote" id="caseNote" cols="30" rows="1"></textarea>
-            <button id="saveNote">Save Note</button>
+            <textarea class="caseNote" name="caseNote" id="caseNote" cols="30" rows="15"></textarea>
+            <button id="saveNote">Save</button>
         </fieldset>
         
     `

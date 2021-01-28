@@ -1,3 +1,13 @@
 @import "Criminals.css";
 @import "Officers.css";
 @import "Notes.css";
+
+
+
+.container{
+    display: flex;
+}
+
+.secondaryContainer{
+    flex-basis: 75%;
+}
