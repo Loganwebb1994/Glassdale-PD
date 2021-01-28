@@ -53,7 +53,7 @@ eventHub.addEventListener("crimeChosen", crimeChosenEvent => {
     }
 })
 
-eventHub.addEventListener("officerChosen", officerChosenEvent => {
+eventHub.addEventListener("officerChosen", customEvent => {
     const officer = customEvent.detail.selectedOfficerName
     //now get criminals
     const criminals = useCriminals
