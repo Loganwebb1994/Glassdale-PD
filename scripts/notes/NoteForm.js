@@ -7,7 +7,7 @@ const eventHub = document.querySelector(".container")
 const render = () => {
     const noteButton = ShowNoteButton()
     contentTarget.innerHTML = `
-        <h3>Case Notes<h3>
+        <h3>Case Note<h3>
         <fieldset class="caseNotesForm">
             <label for="note-date">Date of Entry</label>
             <input class="noteDateEntry" type="date" name="journalDate" id="note-date">
