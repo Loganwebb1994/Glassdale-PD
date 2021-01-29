@@ -17,6 +17,24 @@
       "suspect": "Jisie",
       "text": "Jisie is def sus",
       "id": 3
+    },
+    {
+      "date": "2021-01-11",
+      "suspect": "emily",
+      "text": "sus",
+      "id": 4
+    },
+    {
+      "date": "2021-01-11",
+      "suspect": "caleb",
+      "text": "too smartt",
+      "id": 5
+    },
+    {
+      "date": "2021-02-11",
+      "suspect": "dan",
+      "text": "steals stuff for fun",
+      "id": 6
     }
   ]
 }
