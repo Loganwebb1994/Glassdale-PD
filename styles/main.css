@@ -1,7 +1,7 @@
 @import "Criminals.css";
 @import "Officers.css";
 @import "Notes.css";
-
+@import "Filters.css";
 
 
 .container{
@@ -10,4 +10,8 @@
 
 .secondaryContainer{
     flex-basis: 65%;
+}
+
+.criminalsh3{
+    margin-left: 15px;
 }
