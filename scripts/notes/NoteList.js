@@ -1,5 +1,5 @@
 import {getNotes, useNotes} from "./NoteProvider.js"
-import {NoteHTMLConverter} from "./Note.js"
+import {NoteHTMLRepresentation} from "./Note.js"
 
 const contentTarget = document.querySelector(".noteList")
 const eventHub = document.querySelector(".container")
@@ -9,7 +9,7 @@ eventHub.addEventListener("showNotesClicked", clickEvent =>{
 })
 const render = (noteArray) =>{
     const allNotesAsStrings = noteArray.map(noteObject =>{
-        return NoteHTMLConverter(noteObject)
+        return NoteHTMLRepresentation(noteObject)
     }).join("")
 
     contentTarget.innerHTML =`
