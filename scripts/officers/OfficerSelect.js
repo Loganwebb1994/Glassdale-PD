@@ -25,6 +25,7 @@ const render = (officersCollection) => {
         Look back at the example provided above.
     */
     contentTarget.innerHTML = `
+        <h3>Filter by arresting officer...</h3>
         <select class="dropdown" id="officerSelect">
             <option value="0">Please select an officer...</option>
             ${officersCollection.map(officersObject =>`<option value="${officersObject.name}">${officersObject.name}</option>`).join("")

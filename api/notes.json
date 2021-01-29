@@ -5,6 +5,18 @@
       "suspect": "Bryan",
       "text": "Bryan is always guilty",
       "id": 1
+    },
+    {
+      "date": "2021-01-22",
+      "suspect": "Logan",
+      "text": "I didnt do it",
+      "id": 2
+    },
+    {
+      "date": "2021-01-18",
+      "suspect": "Jisie",
+      "text": "Jisie is def sus",
+      "id": 3
     }
   ]
 }

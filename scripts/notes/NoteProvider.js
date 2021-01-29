@@ -5,8 +5,8 @@ const dispatchStateChangeEvent = () => {
 
     eventHub.dispatchEvent(noteStateChangedEvent)
 }
-
-const getNotes = () => {
+let notes = []
+export const getNotes = () => {
     return fetch('http://localhost:8088/notes')
         .then(response => response.json())
         .then(parsedNotes => {
@@ -23,14 +23,11 @@ export const saveNote = note => {
         },
         body: JSON.stringify(note)
     })
-    // .then(getNotes)
-    // .then(dispatchStateChangeEvent)
+    .then(getNotes)
+    .then(dispatchStateChangeEvent)
 }
 
 
-
-// Handle browser-generated click event in component
-
-
+export const useNotes= () => notes.slice()
 
 
