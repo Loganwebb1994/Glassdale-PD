@@ -2,7 +2,7 @@
 @import "Officers.css";
 @import "Notes.css";
 @import "Filters.css";
-
+@import "Modal.css";
 
 .container{
     display: flex;
