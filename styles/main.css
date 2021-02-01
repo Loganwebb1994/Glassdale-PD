@@ -18,3 +18,8 @@
 h1{
     margin-left: 15px;
 }
+
+header{
+    background-color: brown;
+    width: 100%;
+}
