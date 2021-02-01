@@ -7,7 +7,6 @@ export const ShowAssociatesButton= (criminalObject) => {
 const eventHub = document.querySelector(".container")
 
 eventHub.addEventListener("click", event =>{
-    console.log(`event`, event.target.id)
     if(event.target.id.startsWith("associates")){
     const [prefix, criminalId]  =  event.target.id.split("--")
     const customEvent = new CustomEvent("AssociatesClicked",{
