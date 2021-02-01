@@ -13,7 +13,7 @@ export const AssociatesModal = (criminalObject) =>{
                     <div class="associate__alibi">Alibi: ${associate.alibi}</section>
                 </section>`
                 }).join("")}
-                <button id="modal--close">close modal</button>
+                <button id="modal--close">Close</button>
         </div>
     </div>
                 `
@@ -23,11 +23,9 @@ export const AssociatesModal = (criminalObject) =>{
 const eventHub = document.querySelector(".container")
 
 eventHub.addEventListener("AssociatesClicked", event =>{
-    console.log("associates click heard by list component")
     const selectedCriminalId = event.detail.criminalID
     const criminalsArray = useCriminals()
     const selectedCriminal = criminalsArray.find((criminal) => criminal.id === selectedCriminalId)
-    console.log(selectedCriminal)
     AssociatesModal(selectedCriminal)
 })
 
