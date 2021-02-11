@@ -14,7 +14,8 @@ const render = () => {
             <input class="noteDateEntry" type="date" name="journalDate" id="note-date">
             <label for="note-suspect">Suspect</label>
             <select id="noteForm--criminal" class="criminalSelect">
-                ${criminalArray.map(criminal => `<option value="${ criminal.id }">${ criminal.name }</option>`)}
+            <option value="0">Suspects...</option>
+            ${criminalArray.map(criminal => `<option value="${ criminal.id }">${ criminal.name }</option>`)}
             </select>
             <label for="note-text">Notes</label>
             <textarea class="caseNote" name="caseNote" id="note-text" cols="30" rows="15"></textarea>
@@ -30,6 +31,7 @@ export const NoteForm = () => {
 }
 
 eventHub.addEventListener("click", clickEvent => {
+    // clickEvent.preventDefault()
     if (clickEvent.target.id === "saveNote") {
         const date = document.getElementById("note-date").value
         const suspect = document.getElementById("noteForm--criminal").value
@@ -38,7 +40,7 @@ eventHub.addEventListener("click", clickEvent => {
         // Make a new object representation of a note
         const newNote = {
             date: date,
-            suspect: suspect,
+            criminalId: parseInt(suspect),
             text: notes,
 
         }

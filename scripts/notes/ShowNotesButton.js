@@ -1,4 +1,4 @@
-
+import "./NoteList.js"
 const eventHub = document.querySelector(".container")
 
 eventHub.addEventListener("click", clickEvent => {

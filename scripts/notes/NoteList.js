@@ -1,5 +1,6 @@
 import {getNotes, useNotes} from "./NoteProvider.js"
 import {NoteHTMLRepresentation} from "./Note.js"
+import { getCriminals, useCriminals } from "../criminals/CriminalProvider.js"
 
 const contentTarget = document.querySelector(".noteList")
 const eventHub = document.querySelector(".container")
@@ -7,13 +8,15 @@ const eventHub = document.querySelector(".container")
 eventHub.addEventListener("showNotesClicked", clickEvent =>{
     NoteList()
 })
-const render = (noteArray) =>{
+const render = (noteArray, criminalArray) =>{
     const allNotesAsStrings = noteArray.map(noteObject =>{
-        return NoteHTMLRepresentation(noteObject)
+        debugger
+        const relatedCriminal = criminalArray.find(criminal => criminal.id === noteObject.criminalId)
+        return NoteHTMLRepresentation(noteObject, relatedCriminal)
     }).join("")
 
     contentTarget.innerHTML =`
-    <h3>Notes</h3>
+ 
     <section class="notesList>
     ${allNotesAsStrings}
     </section>
@@ -21,9 +24,12 @@ const render = (noteArray) =>{
 }
 export const NoteList = () =>{
     getNotes()
+    .then(getCriminals)
     .then(()=>{
         const allNotes = useNotes()
-        render(allNotes)
+        const allCriminals = useCriminals()
+        render(allNotes, allCriminals)
+
     })
 }
 
