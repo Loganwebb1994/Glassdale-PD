@@ -2,7 +2,7 @@ const contentContainer = document.querySelector(".associatesContainer")
 
 import {useCriminals} from"../criminals/CriminalProvider.js"
 export const AssociatesModal = (criminalObject) =>{
-  
+
     const HTMLRep = `
     <div id="alibi__modal" class="modal--parent">
         <div class="modal--content">
