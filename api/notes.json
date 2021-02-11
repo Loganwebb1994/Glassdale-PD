@@ -1,46 +1,16 @@
 {
   "notes": [
     {
-      "date": "2021-01-01",
-      "suspect": "Bryan",
-      "text": "Bryan is always guilty",
+      "date": "2021-02-24",
+      "criminalId": 15,
+      "text": "I've cracked the mystery of time travel\n",
       "id": 1
     },
     {
-      "date": "2021-01-22",
-      "suspect": "Logan",
-      "text": "I didnt do it",
+      "date": "2020-12-16",
+      "criminalId": 9,
+      "text": "note",
       "id": 2
-    },
-    {
-      "date": "2021-01-18",
-      "suspect": "Jisie",
-      "text": "Jisie is def sus",
-      "id": 3
-    },
-    {
-      "date": "2021-01-11",
-      "suspect": "emily",
-      "text": "sus",
-      "id": 4
-    },
-    {
-      "date": "2021-01-11",
-      "suspect": "caleb",
-      "text": "too smartt",
-      "id": 5
-    },
-    {
-      "date": "2021-02-11",
-      "suspect": "dan",
-      "text": "steals stuff for fun",
-      "id": 6
-    },
-    {
-      "date": "",
-      "suspect": "",
-      "text": "",
-      "id": 7
     }
   ]
 }
