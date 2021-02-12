@@ -12,7 +12,7 @@ const render = () => {
         <fieldset class="caseNotesForm">
             <label for="note-date">Date of Entry</label>
             <input class="noteDateEntry" type="date" name="journalDate" id="note-date">
-            <label for="note-suspect">Suspect</label>
+            <label for="noteForm--criminal">Suspect</label>
             <select id="noteForm--criminal" class="criminalSelect">
             <option value="0">Suspects...</option>
             ${criminalArray.map(criminal => `<option value="${ criminal.id }">${ criminal.name }</option>`)}

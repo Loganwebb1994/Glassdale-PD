@@ -1,7 +1,7 @@
 import {getNotes, useNotes} from "./NoteProvider.js"
 import {NoteHTMLRepresentation} from "./Note.js"
 import { getCriminals, useCriminals } from "../criminals/CriminalProvider.js"
-
+import {deleteNote} from "./NoteProvider.js"
 const contentTarget = document.querySelector(".noteList")
 const eventHub = document.querySelector(".container")
 
@@ -36,4 +36,19 @@ eventHub.addEventListener("noteStateChanged", event => {
     if (contentTarget.innerHTML !== "") {
         NoteList()
     }
+    })
+
+
+eventHub.addEventListener("click", clickEvent => {
+    if (clickEvent.target.id.startsWith("deleteNote--")) {
+        const [prefix, id] = clickEvent.target.id.split("--")
+
+        deleteNote(id).then(
+            () => {
+                const updatedNotes = useNotes()
+                const criminals = useCriminals()
+                render(updatedNotes, criminals)
+            }
+        )
+        }
     })

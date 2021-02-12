@@ -12,5 +12,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+
 }
 
+.criminalsContainer{
+    width:75%
+}
