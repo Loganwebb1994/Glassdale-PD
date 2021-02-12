@@ -18,6 +18,7 @@ const render = (noteArray, criminalArray) =>{
  
     <section class="notesList>
     ${allNotesAsStrings}
+    <button id="deleteNote--${noteObject.id}">Delete</button>
     </section>
     `
 }
