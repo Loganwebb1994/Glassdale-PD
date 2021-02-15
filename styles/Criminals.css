@@ -1,10 +1,11 @@
-.criminalCard{
+.criminal{
     border: 5px;
     border-color: black; 
     border-style: solid;
     width: 15%;
     margin-bottom: 30px;
     padding: 25px;
+    background-color: #f4a261 ;
     
 }
 
@@ -16,5 +17,8 @@
 }
 
 .criminalsContainer{
-    width:75%
+
+    display:flex;
+    flex-wrap: wrap;
+
 }

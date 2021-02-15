@@ -11,6 +11,12 @@
       "criminalId": 14,
       "text": "note",
       "id": 3
+    },
+    {
+      "date": "2021-02-15",
+      "criminalId": 10,
+      "text": "It's snowing",
+      "id": 4
     }
   ]
 }
