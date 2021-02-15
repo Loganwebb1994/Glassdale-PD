@@ -1,6 +1,6 @@
 import"./AssociatesModal.js"
 export const ShowAssociatesButton= (criminalObject) => {
-    return `<button id="associates--${criminalObject.id}">Alibis and Lyin' Eyes</button>`
+    return `<button id="associates--${criminalObject.id}">Alibis</button>`
 
 }
 

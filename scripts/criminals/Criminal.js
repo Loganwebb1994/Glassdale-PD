@@ -17,7 +17,7 @@ export const Criminal = (criminalObject, facilities) => {
             </p>
             <p>Age: ${criminalObject.age}</p>
             <div>
-                <h2>Facilities</h2>
+                <div>Facilities:</div>
                 <ul>
                     ${facilities.map(f => `<li>${f.facilityName}</li>`).join("")}
                 </ul>
