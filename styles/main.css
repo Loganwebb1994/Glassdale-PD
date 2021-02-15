@@ -6,6 +6,7 @@
 
 .container{
     display: flex;
+    background-color: #e76f51;
 }
 
 .secondaryContainer{
@@ -20,6 +21,6 @@ h1{
 }
 
 header{
-    background-color: brown;
-    width: 100%;
+    width: 90%;
+    padding: 30px;
 }

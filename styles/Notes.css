@@ -2,6 +2,8 @@
     display: flex;
     flex-direction: column;
     width: 25%;
+    background-color: #e9c46a;
+    padding: 30px;
 }
 
 #saveNote{
@@ -15,5 +17,7 @@
 }
 .noteListContainer{
     margin-top: 80px;
-    width: 250px
+    width: 25%;
+    background-color: #f4a261;
+    padding: 30px;
 }
